@@ -6,7 +6,7 @@ function Products() {
     const dispatch = useDispatch();
     const { products, Loading } = useSelector((state) => state.products)
 
-    console.log("in product comp",  products, Loading)
+    // console.log("in product comp",  products, Loading)
     useEffect(()=>{
         dispatch(getAllProducts()) // dispatch redux  thunk
 
